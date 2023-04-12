@@ -140,3 +140,234 @@
         margin-bottom: 0
     }
 }
+
+@media (min-width:1200px) {
+    .product-card__title{
+        max-width: 350px;
+        margin-bottom: 7px;
+        overflow-wrap: inherit
+    }
+}
+
+@media (min-width:1600px) {
+    .product-card__title {
+        max-width: 310px
+    }
+}
+
+
+.display {
+    font-family: Canela, PF Regal Display Pro, Times New Roman, serif;
+    font-weight: 700
+}
+
+.display--3
+ {
+    font-size: 26px;
+    line-height: 1.17
+}
+
+@media (min-width:768px) {
+   
+    .display--3 {
+        font-size: 36px
+    }
+}
+
+
+.product-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 11px
+}
+
+@media (min-width:1200px) {
+    .product-card__footer {
+        margin-bottom: 25px
+    }
+}
+
+.cart-collaterals .cross-sells .product-list .product .product-card__price {
+    font-size: 16px
+}
+
+.product-card__price del {
+    margin-right: 5px
+}
+
+@media (min-width:1200px) {
+    .product-card__price del {
+        font-size: 16px
+    }
+}
+
+.product-card__price ins {
+    text-decoration: none
+}
+
+.product-card--order-review .product-card__price {
+    font-size: 16px
+}
+
+
+
+/*buy now marquee*/
+
+.product-card:hover .product-card__button span {
+    -webkit-animation: marquee 2.3s linear infinite;
+    -o-animation: marquee 2.3s linear infinite;
+    animation: marquee 2.3s linear infinite
+}
+
+.product-card__button {
+    color: #000
+}
+
+.btn
+ {
+    display: inline-block;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .8em 2.1em;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2em;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
+}
+
+.btn--primary,
+.btn--primary:hover,
+.btn-primary,
+.btn-primary:hover
+ {
+    color: #fff;
+    background-color: #000;
+    border-color: #000
+}
+
+.btn--primary:focus,
+.btn-primary.focus,
+.btn-primary:focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5);
+    box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5)
+}
+
+.btn--primary:disabled,
+.btn--primary:not(:disabled):not(.disabled).active,
+.btn--primary:not(:disabled):not(.disabled):active,
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.disabled.btn--primary,
+.show>.dropdown-toggle.btn--primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000
+}
+
+
+.btn--primary:not(:disabled):not(.disabled).active:focus,
+.btn--primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.dropdown-toggle.btn--primary:focus {
+    -webkit-box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5);
+    box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5)
+}
+
+.btn--primary {
+    position: relative;
+    font-family: Nitti, Courier New, monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: none;
+    text-decoration: none !important;
+    padding-top: .8em;
+    padding-bottom: .9em
+}
+
+
+.btn--primary:hover span {
+    -webkit-animation: marquee 2.3s linear infinite;
+    -o-animation: marquee 2.3s linear infinite;
+    animation: marquee 2.3s linear infinite
+}
+
+.btn--primary span {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .3s cubic-bezier(0, .5, .5, 1);
+    -o-transition: all .3s cubic-bezier(0, .5, .5, 1);
+    transition: all .3s cubic-bezier(0, .5, .5, 1);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.btn--primary span:before {
+    content: attr(data-content);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(calc(-110% - 2.1em));
+    -o-transform: translateX(calc(-110% - 2.1em));
+    transform: translateX(calc(-110% - 2.1em));
+    -webkit-transition: all .3s cubic-bezier(0, .5, .5, 1);
+    -o-transition: all .3s cubic-bezier(0, .5, .5, 1);
+    transition: all .3s cubic-bezier(0, .5, .5, 1);
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.btn--md {
+    padding-top: .85em;
+    padding-bottom: .75em
+}
+
+@media (min-width:768px) {
+    .btn--md {
+        font-size: 16px;
+        padding: .95em 2.7em .8em
+    }
+}
+
+@media (min-width:1200px) {
+    .btn--md {
+        font-size: 18px;
+        padding: .8em 2.6em .9em
+    }
+}
+
+@media (min-width:1600px) {
+    .btn--md {
+        font-size: 20px;
+        padding: .65em 1.65em .8em
+    }
+}
