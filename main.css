@@ -6309,33 +6309,7 @@ label.checkbox>input.is-invalid:focus:not(:checked)~input+span:before {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
 }
 
-@media (prefers-reduced-motion:reduce) {
-    .btn,
-    .cart-collaterals .checkout-button,
-    .minicart .checkout,
-    .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-    .newsletter-modal .mailchimp-form__field--subscribe button,
-    .single_add_to_cart_button,
-    .woocommerce-account .addresses a.edit,
-    .woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-    .woocommerce-address-fields .button,
-    .woocommerce-Addresses a.edit,
-    .woocommerce-Button,
-    .woocommerce-cart-form .coupon .button,
-    .woocommerce-checkout .place-order button#place_order,
-    .woocommerce-columns--addresses a.edit,
-    .woocommerce-form-login__submit,
-    .woocommerce-form-register__submit,
-    .woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-    .woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-    .ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-    .ywdpd_popup .single_add_to_cart_button,
-    body.assorted_product .abp_products_footer .button {
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none
-    }
-}
+
 
 .btn:hover,
 .cart-collaterals .checkout-button:hover,
@@ -6449,51 +6423,7 @@ body.assorted_product .abp_products_footer .disabled.button {
     opacity: .65
 }
 
-.cart-collaterals a.disabled.checkout-button,
-.cart-collaterals fieldset:disabled a.checkout-button,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) a.disabled.button,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) fieldset:disabled a.button,
-.minicart a.disabled.checkout,
-.minicart fieldset:disabled a.checkout,
-.woocommerce-account .addresses a.disabled.edit,
-.woocommerce-account .addresses fieldset:disabled a.edit,
-.woocommerce-address-fields a.disabled.button,
-.woocommerce-address-fields fieldset:disabled a.button,
-.woocommerce-Addresses a.disabled.edit,
-.woocommerce-Addresses fieldset:disabled a.edit,
-.woocommerce-cart-form .coupon a.disabled.button,
-.woocommerce-cart-form .coupon fieldset:disabled a.button,
-.woocommerce-columns--addresses a.disabled.edit,
-.woocommerce-columns--addresses fieldset:disabled a.edit,
-.woocommerce-MyAccount-content a.disabled.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content fieldset:disabled a.yith-add-new-gc-my-account-button,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a.disabled,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container fieldset:disabled a,
-a.btn.disabled,
-a.disabled.single_add_to_cart_button,
-a.disabled.woocommerce-Button,
-a.disabled.woocommerce-form-login__submit,
-a.disabled.woocommerce-form-register__submit,
-body.assorted_product .abp_products_footer a.disabled.button,
-body.assorted_product .abp_products_footer fieldset:disabled a.button,
-fieldset:disabled .cart-collaterals a.checkout-button,
-fieldset:disabled .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) a.button,
-fieldset:disabled .minicart a.checkout,
-fieldset:disabled .woocommerce-account .addresses a.edit,
-fieldset:disabled .woocommerce-address-fields a.button,
-fieldset:disabled .woocommerce-Addresses a.edit,
-fieldset:disabled .woocommerce-cart-form .coupon a.button,
-fieldset:disabled .woocommerce-columns--addresses a.edit,
-fieldset:disabled .woocommerce-MyAccount-content a.yith-add-new-gc-my-account-button,
-fieldset:disabled .ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-fieldset:disabled a.btn,
-fieldset:disabled a.single_add_to_cart_button,
-fieldset:disabled a.woocommerce-Button,
-fieldset:disabled a.woocommerce-form-login__submit,
-fieldset:disabled a.woocommerce-form-register__submit,
-fieldset:disabled body.assorted_product .abp_products_footer a.button {
-    pointer-events: none
-}
+
 
 .btn--primary,
 .btn--primary:hover,
@@ -20083,9 +20013,7 @@ a.text-dark:hover {
 }
 
 .mm-wrapper_blocking,
-.mm-wrapper_blocking body {
-    overflow: hidden
-}
+
 
 .mm-wrapper_blocking .mm-wrapper__blocker {
     display: block
@@ -21200,10 +21128,7 @@ a.text-dark:hover {
     --mm-sidebar-expanded-size: 440px
 }
 
-.mm-wrapper_sidebar-collapsed body,
-.mm-wrapper_sidebar-expanded body {
-    position: relative
-}
+
 
 .mm-wrapper_sidebar-collapsed .mm-slideout,
 .mm-wrapper_sidebar-expanded .mm-slideout {
@@ -21261,10 +21186,7 @@ a.text-dark:hover {
     display: none
 }
 
-.mm-wrapper_sidebar-expanded.mm-wrapper_blocking,
-.mm-wrapper_sidebar-expanded.mm-wrapper_blocking body {
-    overflow: visible
-}
+
 
 .mm-wrapper_sidebar-expanded .mm-wrapper__blocker {
     display: none !important
@@ -34017,15 +33939,7 @@ body.assorted_product .apb_products_items_container .abp-captions {
     display: none
 }
 
-.product-card__button.loading {
-    pointer-events: none;
-    color: transparent;
-    background-image: url(/app/themes/wildsouls-theme/dist/images/loader_9a646d84.gif);
-    background-repeat: no-repeat;
-    background-size: 15%;
-    background-blend-mode: color-burn;
-    background-position: 50% 50%
-}
+
 
 .product-card .media-item {
     z-index: 2
