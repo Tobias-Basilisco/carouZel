@@ -1,4 +1,130 @@
-.flexible-content-wrap>.media-block--fullwidth:first-child {
+*{
+    margin: 0;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --brand: (pink:#e9a8c6, orange:#ed7b49, cupid:#f5afb9, #000:#000, #fff:#fff, brown:#be5a4b);
+    --background: (pink:#f4b8d4);
+    --secondary: (pink:#e9a8c6, raw:#f9dcd4, red:#f35c59);
+    --product: (tahini-sketo:#fecf6b, tahini-olikis:#d4b18a, tahini-meli:#fff7b0, tahini-karida:#aed7ad, tahini-maple:#ee5b5e, tahini-xaroupomelo:#a790c2, tahini-bio:#6cb4e1, tahini-chia:#ad6aa9, tahini-linarosporos:#4fb07d, tahini-fitikes-ines:#a6d07d, tahini-protein:#f84f5a, tahini-combo:#f6b8d3, fistikovoutiro:#72a080, fountoukovoutiro:#abafd6, amigdalovoutiro:#f6b8d3, kasious-voutiro:#afe2f8, meli:#ffe699, nuts-psimena:#a5493d, nuts-oma:#fceeea, gift-card:#ec4844, mystery-box:#a383ff);
+    --primary: #000;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ed7b49;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1600px;
+    --breakpoint-xxxl: 1920px;
+    --breakpoint-xxxxl: 3840px;
+    --font-family-sans-serif: "Graphik LG", "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+body {
+    min-width: 992px !important
+}
+
+@media (min-width:1200px) {
+    body {
+        font-size: 16px
+    }
+}
+
+@media (min-width:1600px) {
+    body {
+        font-size: 18px
+    }
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block
+}
+
+
+a {
+    background-color: transparent
+}
+
+a,
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.spaaan:hover .btn span{
+    -webkit-animation: marquee 1.3s linear infinite;
+    -o-animation: marquee 1.3s linear infinite;
+    animation: marquee 1.3s linear infinite;
+}
+
+.spaan{
+    
+}
+
+a:not([href]):not([tabindex]),
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+    color: inherit;
+    text-decoration: none
+}
+
+a:not([href]):not([tabindex]):focus {
+    outline: 0
+}
+
+img,
+svg {
+    vertical-align: middle;
+    height: 500px;
+}
+
+img,
+tr {
+    page-break-inside: avoid
+}
+
+img {
+    border-style: none
+}
+
+.backg {
+    padding-top: 120px;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+.flexible-content-wrap{
     margin-top: 0
 }
 
@@ -37,21 +163,27 @@
 }
 
 .product-card {
-    margin-bottom: 120px
+    margin-bottom: 300px;
+    
 }
+
+.product-card .media-item {
+    z-index: 2
+
+}
+
 
 .product-card .media-item {
     z-index: 2
 }
 
 
-.product-card .media-item {
-    z-index: 2
-}
-
+/*dimensioni dell'immagine*/
 .product-card__thumb {
     position: relative;
-    padding: 17.5% 0 18.5%
+    padding: 17.5% 0 18.5%;
+    height: 500px;
+
 }
 
 
@@ -125,8 +257,12 @@
 }
 
 .product-card__title {
-    margin-bottom: 13px;
-    max-width: 400px
+    max-width: 400px;
+    font-size: 2.5rem !important;
+    position: absolute;
+    bottom: 8rem;
+    margin-bottom: 20px;
+    z-index:999 ;
 }
 
 @media (max-width:767px) {
@@ -163,7 +299,7 @@
 
 .display--3
  {
-    font-size: 26px;
+    font-size: 6px;
     line-height: 1.17
 }
 
@@ -175,12 +311,6 @@
 }
 
 
-.product-card__footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 11px
-}
 
 @media (min-width:1200px) {
     .product-card__footer {
@@ -214,15 +344,9 @@
 
 /*buy now marquee*/
 
-.product-card:hover .product-card__button span {
-    -webkit-animation: marquee 2.3s linear infinite;
-    -o-animation: marquee 2.3s linear infinite;
-    animation: marquee 2.3s linear infinite
-}
 
-.product-card__button {
-    color: #000
-}
+
+
 
 .btn
  {
@@ -248,14 +372,14 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
 }
 
-.btn--primary,
+
 .btn--primary:hover,
-.btn-primary,
 .btn-primary:hover
  {
     color: #fff;
     background-color: #000;
-    border-color: #000
+    border-color: #000000 !important;
+    
 }
 
 .btn--primary:focus,
@@ -280,19 +404,49 @@
 }
 
 
-.btn--primary:not(:disabled):not(.disabled).active:focus,
-.btn--primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.dropdown-toggle.btn--primary:focus {
+.btn--primary:hover {
     -webkit-box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5);
-    box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5)
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.5)
 }
+
+
+
+.btn--md {
+    padding-top: .85em;
+    padding-bottom: .75em
+}
+
+@media (min-width:768px) {
+    .btn--md {
+        font-size: 16px;
+        padding: .95em 2.7em .8em
+    }
+}
+
+@media (min-width:1200px) {
+    .btn--md {
+        font-size: 18px;
+        padding: .8em 2.6em .9em
+    }
+}
+
+@media (min-width:1600px) {
+    .btn--md {
+        font-size: 20px;
+        padding: .65em 1.65em .8em
+    }
+}
+
+.product-card__button {
+    color: #000
+}
+
 
 .btn--primary {
     position: relative;
     font-family: Nitti, Courier New, monospace;
-    font-size: 14px;
+    font-size: 24px;
+    font-weight: bold;
     text-transform: uppercase;
     overflow: hidden;
     border: none;
@@ -302,11 +456,25 @@
 }
 
 
-.btn--primary:hover span {
-    -webkit-animation: marquee 2.3s linear infinite;
-    -o-animation: marquee 2.3s linear infinite;
-    animation: marquee 2.3s linear infinite
+.btn-primary:hover span, .btn--primary:hover span {
+    /*-moz-transform: translateX(155%);
+    -webkit-transform: translateX(155%);
+    transform: translateX(155%);*/
+    -webkit-animation: marquee 200.3s linear infinite;
+    -o-animation: marquee 200.3s linear infinite;
+    animation: marquee 200.3s linear infinite;
+
 }
+
+.product-card a:hover span {
+    -webkit-animation: marquee 200.3s linear infinite;
+    -o-animation: marquee 200.3s linear infinite;
+    animation: marquee 200.3s linear infinite;
+
+}
+
+
+
 
 .btn--primary span {
     width: 100%;
@@ -346,28 +514,46 @@
     justify-content: center
 }
 
-.btn--md {
-    padding-top: .85em;
-    padding-bottom: .75em
-}
 
-@media (min-width:768px) {
-    .btn--md {
-        font-size: 16px;
-        padding: .95em 2.7em .8em
+@-webkit-keyframes marquee {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(calc(110% + 2.1em));
+        transform: translateX(calc(110% + 2.1em))
     }
 }
 
-@media (min-width:1200px) {
-    .btn--md {
-        font-size: 18px;
-        padding: .8em 2.6em .9em
+@-o-keyframes marquee {
+    0% {
+        -o-transform: translateX(0);
+        transform: translateX(0)
+    }
+    to {
+        -o-transform: translateX(calc(110% + 2.1em));
+        transform: translateX(calc(110% + 2.1em))
     }
 }
 
-@media (min-width:1600px) {
-    .btn--md {
-        font-size: 20px;
-        padding: .65em 1.65em .8em
+@keyframes marquee {
+    0% {
+        -webkit-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(calc(110% + 2.1em));
+        -o-transform: translateX(calc(110% + 2.1em));
+        transform: translateX(calc(110% + 2.1em))
     }
 }
+
+bdi {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 6rem;
+    z-index: 999;
+}
+
