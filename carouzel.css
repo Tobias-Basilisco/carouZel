@@ -342,7 +342,7 @@ img {
 
 
 
-/*buy now marquee*/
+
 
 
 
@@ -372,6 +372,7 @@ img {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
 }
 
+/*hover button text and shadow color*/
 
 .btn--primary:hover,
 .btn-primary:hover
@@ -379,8 +380,12 @@ img {
     color: #fff;
     background-color: #000;
     border-color: #000000 !important;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.5)
     
 }
+
+
 
 .btn--primary:focus,
 .btn-primary.focus,
@@ -404,10 +409,6 @@ img {
 }
 
 
-.btn--primary:hover {
-    -webkit-box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5);
-    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.5)
-}
 
 
 
